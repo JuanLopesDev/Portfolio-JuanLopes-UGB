@@ -5,48 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Juan Lopes Silvério — Portfólio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="bg-grid" aria-hidden="true"></div>
+<header class="header">
+  <nav class="navigation">
+    <a class="navigation__logo" href="#topo" aria-label="UGB FERP - topo da página">
+      <img src="imagens/logo-ugb.png" alt="Logo UGB FERP">
+    </a>
+    <div class="navigation__links">
+      <a href="#sobre">SOBRE</a>
+      <a href="#formacao">FORMAÇÃO</a>
+      <a href="#habilidades">SKILLS</a>
+      <a href="#projetos">PROJETOS</a>
+      <a href="#experiencia">EXPERIÊNCIA</a>
+    </div>
+  </nav>
+</header>
 
-<nav class="topnav">
-  <span class="topnav-brand">JLS<span class="cursor-dot"></span></span>
-  <div class="topnav-links">
-    <a href="#sobre">sobre</a>
-    <a href="#formacao">formação</a>
-    <a href="#habilidades">skills</a>
-    <a href="#projetos">projetos</a>
-    <a href="#experiencia">experiência</a>
-  </div>
-</nav>
-
-<header class="hero">
+<section class="hero" id="topo">
   <div class="hero-inner">
     <p class="kicker">&lt;portfólio · UGB&#8209;FERP&nbsp;/&nbsp;Volta&nbsp;Redonda&gt;</p>
     <h1>Juan Lopes<br>Silvério</h1>
-    <p class="hero-role"><span class="type-target">Programador Full Stack · C# · ASP.NET · .NET · SQL Server</span><span class="caret"></span></p>
+    <p class="hero-role"><span class="type-target">Programador Full Stack · C# · ASP.NET · .NET · APIs REST · SQL Server</span><span class="caret"></span></p>
     <p class="hero-lede">
-      Graduando em Engenharia de Software, atuando profissionalmente na
-      UGB-FERP no desenvolvimento e manutenção de sistemas institucionais,
-      implementação de novas funcionalidades, integrações e administração
-      de bancos de dados SQL Server. Trabalho com o ecossistema .NET,
-      desenvolvimento web e bancos de dados relacionais, sempre buscando
-      soluções eficientes e escaláveis.
+      Desenvolvedor de software na UGB-FERP, onde crio e mantenho sistemas
+      institucionais de ponta a ponta: modelagem de banco de dados, APIs em
+      .NET e interfaces em ASP.NET. Graduando em Engenharia de Software,
+      unindo prática profissional diária com formação acadêmica.
     </p>
     <div class="hero-contact">
-      <a href="mailto:juan.lopes.silverio@gmail.com">juan.lopes.silverio@gmail.com</a>
-      <span class="dot-sep"></span>
-      <a href="tel:+5524999357885">(24) 99935-7885</a>
-      <span class="dot-sep"></span>
-      <a href="https://www.linkedin.com/in/juan-lopes-silv%C3%A9rio/" target="_blank" rel="noopener">linkedin.com/in/juan-lopes-silvério</a>
-      <span class="dot-sep"></span>
-      <a href="https://github.com/JuanLopesDev" target="_blank" rel="noopener">github.com/JuanLopesDev</a>
+      <a href="mailto:juan.lopes.silverio@gmail.com" class="icon-link" aria-label="E-mail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/juan-lopes-silv%C3%A9rio/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 9h4v12H3zM9.5 9H13v1.64h.05c.5-.9 1.71-1.84 3.52-1.84 3.76 0 4.45 2.36 4.45 5.44V21h-4v-5.76c0-1.37-.03-3.14-2-3.14-2 0-2.31 1.5-2.31 3.04V21h-4z"/></svg>
+      </a>
+      <a href="https://github.com/JuanLopesDev" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.29 6.84 9.63.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0022 12.19C22 6.58 17.52 2 12 2z"/></svg>
+      </a>
     </div>
     <p class="hero-location">Volta Redonda — RJ, Brasil</p>
+
+    <div class="btn-container">
+      <a class="btn" href="#projetos">PROJETOS</a>
+      <a class="btn" href="#experiencia">EXPERIÊNCIA</a>
+      <a class="btn btn--primary" href="mailto:juan.lopes.silverio@gmail.com">ENTRAR EM CONTATO</a>
+    </div>
   </div>
+
   <div class="hero-mark">
     <div class="frame-ring"></div>
     <div class="frame-ring frame-ring-2"></div>
@@ -59,24 +68,23 @@
     </div>
     <span class="status-chip"><span class="status-dot"></span>disponível</span>
   </div>
-</header>
+</section>
 
 <main>
 
-  <section class="section" id="sobre">
+  <section class="section reveal" id="sobre">
     <div class="section-head">
       <span class="section-tag">// 01</span>
       <h2>Sobre</h2>
     </div>
     <div class="section-body">
       <p>
-        Me chamo Juan Lopes Silvério, tenho 20 anos e sou graduando em
-        Engenharia de Software pela UGB-FERP. Atualmente atuo profissionalmente
-        na própria instituição, participando do desenvolvimento e manutenção de
-        sistemas institucionais, implementação de novas funcionalidades,
-        integração de sistemas e administração de bancos de dados SQL Server.
-        Trabalho principalmente com C#, ASP.NET, .NET, Entity Framework,
-        SQL Server, JavaScript, HTML e CSS.
+        Sou o Juan, natural de Volta Redonda. Atuo profissionalmente na
+        UGB-FERP, onde participo do desenvolvimento e manutenção de sistemas
+        institucionais: implemento novas funcionalidades, construo e consumo
+        APIs, integro sistemas e administro bancos de dados SQL Server. No
+        dia a dia, trabalho com C#, ASP.NET, .NET, Entity Framework, SQL
+        Server, JavaScript, HTML e CSS.
       </p>
       <p>
         Minha trajetória em tecnologia começou com a formação técnica em
@@ -91,7 +99,7 @@
     </div>
   </section>
 
-  <section class="section" id="formacao">
+  <section class="section reveal" id="formacao">
     <div class="section-head">
       <span class="section-tag">// 02</span>
       <h2>Formação</h2>
@@ -118,47 +126,69 @@
     </div>
   </section>
 
-  <section class="section" id="habilidades">
+  <section class="section reveal" id="habilidades">
     <div class="section-head">
       <span class="section-tag">// 03</span>
       <h2>Habilidades</h2>
     </div>
-    <div class="skills-grid">
-      <div class="skill-block">
+
+    <div class="skills-wrap">
+      <div class="skill-panel">
         <h3>Técnicas</h3>
-        <ul>
-          <li>C# &amp; .NET</li>
-          <li>ASP.NET &amp; Entity Framework</li>
-          <li>SQL Server &amp; administração de banco de dados</li>
-          <li>Desenvolvimento e consumo de APIs</li>
-          <li>JavaScript, HTML &amp; CSS</li>
-          <li>Git &amp; controle de versão</li>
-          <li>Infraestrutura de TI &amp; manutenção de computadores</li>
-          <li>Redes &amp; suporte técnico</li>
-        </ul>
+        <div class="chip-grid">
+          <span class="chip"><span class="chip-dot mint"></span>C# &amp; .NET</span>
+          <span class="chip"><span class="chip-dot mint"></span>ASP.NET</span>
+          <span class="chip"><span class="chip-dot blue"></span>SQL Server</span>
+          <span class="chip"><span class="chip-dot blue"></span>APIs &amp; integrações</span>
+          <span class="chip"><span class="chip-dot mint"></span>Entity Framework</span>
+          <span class="chip"><span class="chip-dot mint"></span>JavaScript</span>
+          <span class="chip"><span class="chip-dot mint"></span>HTML &amp; CSS</span>
+          <span class="chip"><span class="chip-dot blue"></span>Git</span>
+          <span class="chip"><span class="chip-dot amber"></span>Suporte técnico</span>
+        </div>
       </div>
-      <div class="skill-block">
+
+      <div class="skill-panel">
         <h3>Comportamentais</h3>
-        <ul>
-          <li>Capacidade analítica</li>
-          <li>Trabalho em equipe</li>
-          <li>Resolução de problemas</li>
-          <li>Facilidade de contato e comunicação</li>
-          <li>Autoaprendizagem constante</li>
-        </ul>
+        <div class="chip-grid">
+          <span class="chip outline">Capacidade analítica</span>
+          <span class="chip outline">Trabalho em equipe</span>
+          <span class="chip outline">Resolução de problemas</span>
+          <span class="chip outline">Facilidade de contato e comunicação</span>
+          <span class="chip outline">Autoaprendizagem constante</span>
+        </div>
       </div>
-      <div class="skill-block">
+
+      <div class="skill-panel">
         <h3>Idiomas</h3>
-        <ul>
-          <li>Português — fluente/nativo</li>
-          <li>Inglês — nível avançado</li>
-          <li>Espanhol — nível intermediário</li>
-        </ul>
+        <div class="lang-list">
+          <div class="lang-row">
+            <span class="lang-name">Português</span>
+            <span class="lang-meter" aria-hidden="true">
+              <span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span>
+            </span>
+            <span class="lang-level">nativo</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Inglês</span>
+            <span class="lang-meter" aria-hidden="true">
+              <span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg"></span>
+            </span>
+            <span class="lang-level">avançado</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Espanhol</span>
+            <span class="lang-meter" aria-hidden="true">
+              <span class="seg on"></span><span class="seg on"></span><span class="seg"></span><span class="seg"></span>
+            </span>
+            <span class="lang-level">intermediário</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="projetos">
+  <section class="section reveal" id="projetos">
     <div class="section-head">
       <span class="section-tag">// 04</span>
       <h2>Projetos</h2>
@@ -178,8 +208,8 @@
         <ul class="tags">
           <li>C#</li>
           <li>.NET</li>
-          <li>Entity Framework</li>
           <li>SQL Server</li>
+          <li>Entity Framework</li>
         </ul>
       </article>
 
@@ -189,35 +219,20 @@
           <a href="https://github.com/JuanLopesDev/GeoFindService" target="_blank" rel="noopener">ver repositório</a>
         </div>
         <p>
-          Serviço em ASP.NET que consome uma API externa de geolocalização
+          API em ASP.NET que consome um serviço externo de geolocalização
           para busca e localização geográfica.
         </p>
         <ul class="tags">
           <li>ASP.NET</li>
           <li>C#</li>
-          <li>Consumo de API</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <div class="project-top">
-          <h3>Portfólio pessoal</h3>
-          <a href="https://github.com/JuanLopesDev" target="_blank" rel="noopener">ver repositório</a>
-        </div>
-        <p>
-          Este site — desenvolvido apenas com HTML e CSS como trabalho
-          acadêmico, reunindo formação, projetos e contato em um único lugar.
-        </p>
-        <ul class="tags">
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>API REST</li>
         </ul>
       </article>
 
     </div>
   </section>
 
-  <section class="section" id="experiencia">
+  <section class="section reveal" id="experiencia">
     <div class="section-head">
       <span class="section-tag">// 05</span>
       <h2>Experiência</h2>
@@ -261,11 +276,22 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <p>Vamos conversar sobre a próxima etapa da minha carreira.</p>
-    <a class="footer-cta" href="mailto:juan.lopes.silverio@gmail.com">juan.lopes.silverio@gmail.com</a>
+    <p>Vamos conversar sobre a próxima etapa da minha carreira?</p>
+    <div class="footer-contacts">
+      <a class="icon-link icon-link-lg" href="mailto:juan.lopes.silverio@gmail.com" aria-label="E-mail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+      </a>
+      <a class="icon-link icon-link-lg" href="https://www.linkedin.com/in/juan-lopes-silv%C3%A9rio/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 9h4v12H3zM9.5 9H13v1.64h.05c.5-.9 1.71-1.84 3.52-1.84 3.76 0 4.45 2.36 4.45 5.44V21h-4v-5.76c0-1.37-.03-3.14-2-3.14-2 0-2.31 1.5-2.31 3.04V21h-4z"/></svg>
+      </a>
+      <a class="icon-link icon-link-lg" href="https://github.com/JuanLopesDev" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.29 6.84 9.63.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0022 12.19C22 6.58 17.52 2 12 2z"/></svg>
+      </a>
+    </div>
   </div>
   <p class="footer-note">Juan Lopes Silvério · Engenharia de Software · UGB-FERP, Volta Redonda/RJ</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
